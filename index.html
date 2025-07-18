@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Planets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">THE PLANETS</div>
+            <ul class="nav-menu">
+                <li><a href="#" data-planet="mercury">MERCURY</a></li>
+                <li><a href="#" data-planet="venus">VENUS</a></li>
+                <li><a href="#" data-planet="earth" class="active">EARTH</a></li>
+                <li><a href="#" data-planet="mars">MARS</a></li>
+                <li><a href="#" data-planet="jupiter">JUPITER</a></li>
+                <li><a href="#" data-planet="saturn">SATURN</a></li>
+                <li><a href="#" data-planet="uranus">URANUS</a></li>
+                <li><a href="#" data-planet="neptune">NEPTUNE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="planet-container">
+            <div class="planet-image">
+                <div id="planet-visual" class="planet earth-planet"></div>
+            </div>
+            
+            <div class="planet-info">
+                <h1 id="planet-name">EARTH</h1>
+                <p id="planet-description">
+                    Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.
+                </p>
+                <p class="source">Source: <span>Wikipedia</span> <span class="external-link">↗</span></p>
+                
+                <div class="planet-sections">
+                    <button class="section-btn active" data-section="overview">
+                        <span class="section-number">01</span>
+                        <span class="section-name">OVERVIEW</span>
+                    </button>
+                    <button class="section-btn" data-section="structure">
+                        <span class="section-number">02</span>
+                        <span class="section-name">INTERNAL STRUCTURE</span>
+                    </button>
+                    <button class="section-btn" data-section="geology">
+                        <span class="section-number">03</span>
+                        <span class="section-name">SURFACE GEOLOGY</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="planet-stats">
+            <div class="stat-card">
+                <h3>ROTATION TIME</h3>
+                <p id="rotation-time">0.99 DAYS</p>
+            </div>
+            <div class="stat-card">
+                <h3>REVOLUTION TIME</h3>
+                <p id="revolution-time">365.26 DAYS</p>
+            </div>
+            <div class="stat-card">
+                <h3>RADIUS</h3>
+                <p id="radius">6,371 KM</p>
+            </div>
+            <div class="stat-card">
+                <h3>AVERAGE TEMP.</h3>
+                <p id="temperature">16°C</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
